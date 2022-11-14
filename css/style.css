@@ -43,6 +43,7 @@ html{
     height:150px;
     float:right;
     padding-right:50px;
+    padding-top: 22px;
   }
   
   h1{
@@ -77,6 +78,7 @@ html{
   
   .skip {
     background: inherit;
+    color: black;
     padding:10px;
     border: 5px  rgb(102, 0, 128) solid;
     border-radius:10px;
@@ -137,9 +139,12 @@ html{
     justify-content: center;
   }
   .gallery img {
-    padding-top: 20px;
+    border: 5px dotted rgb(255, 255, 120);
     width: 80%;
     margin:auto;
+  }
+  .gallery p{
+    padding-bottom: 40px;
   }
 
   .eboard {
@@ -169,7 +174,6 @@ html{
     nav li{
       display:inline;
     }
-    /* move up*/
     .logo{
       margin-top:-17px;
       width:75px;
@@ -183,6 +187,14 @@ html{
     }
     .eboard img:last-child {
       grid-column:4/span 2;
+    }
+    .gallery {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .gallery img, .gallery p {
+      width: 30%;
     }
   }
 
@@ -199,6 +211,7 @@ html{
     margin:auto;
     margin-top: 10px;
     margin-bottom:10px;
+    padding-left:90px;
     width:100px;
     height:100px;
   }
@@ -215,5 +228,7 @@ html{
     .eboard img:last-child {
       grid-column:4/span 2;
     }
+
+    /* evrey third image flex*/
   }
   
