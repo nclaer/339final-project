@@ -126,6 +126,7 @@ html{
   #home {
     display:flex;
     justify-content:center;
+    width: 50%;
   }
   p {
     color:white;
