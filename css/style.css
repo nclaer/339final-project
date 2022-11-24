@@ -170,6 +170,12 @@ html{
   .eboard img:last-child {
     grid-column: 2/ span 2;
   }
+
+  .SM h2 {
+    font-style:initial;
+    padding-bottom:10px;
+    font-weight: bolder;
+  }
   .socials{
     display:grid;
     grid-template-columns: repeat(4,22%);
@@ -314,11 +320,6 @@ html{
     .gallery p:first-child {
       width: 100%;
       display:block;
-    }
-    .SM h2 {
-      font-style:initial;
-      padding-bottom:0;
-      text-decoration:underline;
     }
 
     .socials{
