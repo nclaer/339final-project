@@ -27,7 +27,7 @@ html{
     font-family: "Nunito Sans", 'Open Sans', sans-serif;
   }
   main{
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
 
   nav{
@@ -154,12 +154,13 @@ html{
 
   .eboard {
     display:grid;
-    grid-template-columns: repeat(4,22%);
+    grid-template-columns: repeat(4,21%);
     grid-auto-rows:auto 1fr auto;
     align-items: stretch;
     column-gap: 2%;
     row-gap: 0.5%;
     justify-content:center;
+    padding-bottom: 250px;
   }
   .eboard img {
     grid-column:span 2;
@@ -253,25 +254,26 @@ html{
     opacity: 0.8;
   }
 
-  /* @keyframes slideInFromLeft {
+  @keyframes textBigger {
     0% {
-      transform: translateX(-100%);
+      font-size: 20%;
     }
-    100% {
-      transform: translateX(0);
+    50% {
+      font-size: 100%;
     }
   }
   
-  .logo {  
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-  } */
+  nav li {  
+    animation: 2s ease-out 0s 1 textBigger;
+  } 
 
-  /* @media (prefers-reduced-motion) {
-    .logo{
-        animation:none;
-    }
-} */
-  
+  .eboard img{ 
+    transition: transform .2s;
+  } 
+
+  .eboard img:hover { 
+    transform: scale(1.25); 
+  }
 
   @media screen and (min-width:700px) {
     main{
@@ -289,7 +291,8 @@ html{
       height:75px;
     }
     .eboard {
-      grid-template-columns: repeat(6,14%);
+      grid-template-columns: repeat(6,13%);
+      padding-bottom: 170px;
     }
     .eboard img:nth-child(16n){
       grid-column:2/span 2;
@@ -343,9 +346,12 @@ html{
       width:80%;
       height: 25vh;
    }
+   .eboard img:hover { 
+    transform: scale(1.35); 
+  }
   }
 
-  @media screen and (min-width:1100px) {
+  @media screen and (min-width:1000px) {
     main{
       padding-bottom: 100px;
     }
@@ -368,6 +374,7 @@ html{
   }
     .eboard {
       grid-template-columns: repeat(8,10%);
+      padding-bottom: 250px;
     }
     .eboard img:nth-child(16n){
       grid-column:7/span 2;
@@ -396,5 +403,19 @@ html{
       grid-template-columns:80%;
     }
   }
+
+  @media (prefers-reduced-motion) {
+    nav li{
+      animation:none;
+    }
+    .eboard img{
+      transition:none;
+    }
+    .eboard img:hover{
+      transform:none;
+    }
+
+  }
+
   
   
