@@ -35,15 +35,15 @@ html{
     top:-25px;
     justify-content:space-between;
     background-color: rgb(102, 0, 128);
-    padding: 30px 0 10px 0; 
+    padding: 30px 0 10px 30px; 
     text-align: left;
   }
   .logo{
-    width:150px;
-    height:150px;
+    width:125px;
+    height:125px;
     float:right;
-    padding-right:50px;
-    padding-top: 22px;
+    padding-right: 30px;
+    padding-top: 12px;
   }
   
   h1{
@@ -286,15 +286,21 @@ html{
       padding-bottom: 125px;
     }
     nav {
-      text-align: left;
+      padding: 50px 0 40px 30px;
+    }
+    nav ul {
+      margin: auto;
     }
     nav li{
       display:inline;
     }
     .logo{
-      margin-top:-17px;
       width:75px;
       height:75px;
+      padding: initial;
+      margin-top: -10px;
+      margin-right: 20px;
+      
     }
     .eboard {
       grid-template-columns: repeat(6,13%);
@@ -365,11 +371,9 @@ html{
     margin:auto;
     margin-top: 10px;
     margin-bottom:10px;
-    padding-left:90px;
     width:100px;
     height:100px;
   }
-  /*spread out*/
   nav li {
     display:inline-block;
   }
